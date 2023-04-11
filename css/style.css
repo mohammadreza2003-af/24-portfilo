@@ -25,6 +25,7 @@
 
   --color-dark: #333;
   --color-red-light: #eb455f;
+  --color-red-light-l: #eb455ea8;
   --color-heading-primary: #111;
   --color-dark-light: #6b728e;
   --color-white: #fff;
@@ -78,8 +79,7 @@ header {
 .logo-con:hover {
   color: var(--color-red-light);
 }
-.nav-bar {
-}
+
 .nav-list {
   color: var(--color-dark);
   display: flex;
@@ -145,4 +145,35 @@ header {
   border-radius: 5px;
   box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
   transition: transform 0.3s;
+}
+
+/* anim-btn*/
+
+.btn:hover {
+  transform: translateY(-3px) scale(1.01);
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* social */
+.head-socials {
+  position: absolute;
+  top: 50%;
+  left: -22%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+  padding: 0.5rem;
+}
+.social-box {
+  width: 5rem;
+}
+.social-link {
+  width: 100%;
+  display: block;
+  padding: 1rem;
+  transition: background 0.3s;
+  border-radius: 5px;
+}
+.social-link:hover {
+  background: var(--color-red-light-l);
 }
