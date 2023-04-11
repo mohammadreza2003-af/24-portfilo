@@ -105,3 +105,44 @@ header {
   top: 50%;
   left: 50%;
 }
+
+.head-content {
+  width: 90rem;
+}
+.heading-primary {
+  font-size: 6rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 3px;
+  color: var(--color-heading-primary);
+}
+.dis-box {
+  margin: 3rem auto 0 auto;
+  max-width: 90%;
+  text-align: center;
+}
+.dis {
+  font-size: 2.2rem;
+  line-height: 1.5;
+  width: 100%;
+  color: var(--color-dark);
+}
+.btn-box {
+  margin-top: 5rem;
+  text-align: center;
+}
+.btn {
+  padding: 1.5rem 8rem;
+  font-size: 2rem;
+  background: var(--color-red-light);
+  color: var(--color-white);
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+  display: inline-block;
+  font-weight: 700;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s;
+}
