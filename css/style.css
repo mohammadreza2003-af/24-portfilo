@@ -3,3 +3,36 @@
   padding: 0;
   box-sizing: border-box;
 }
+:root {
+  /*  font-size */
+  --size-16: 1.6rem;
+  --size-6: 0.6rem;
+  --size-24: 2.4rem;
+  --size-32: 3.2rem;
+  --size-18: 1.8rem;
+  --size-96: 9.6rem;
+  --size-64: 6.4rem;
+  --size-14: 1.4rem;
+  --size-12: 1.2rem;
+  --size-48: 4.8rem;
+  --size-150: 15rem;
+  --size-256: 25.6rem;
+  --size-10: 10px;
+  --size-128: 12.8rem;
+  --size-175: 17.5rem;
+  --size-500: 50rem;
+  /* color */
+
+  --color-dark: #404258;
+  --color-dark-med: #474e68;
+  --color-dark-low: #50577a;
+  --color-dark-light: #6b728e;
+  --color-white: #fff;
+}
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
