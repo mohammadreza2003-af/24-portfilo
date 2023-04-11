@@ -23,8 +23,8 @@
   --size-500: 50rem;
   /* color */
 
-  --color-dark: #404258;
-  --color-dark-med: #474e68;
+  --color-dark: #333;
+  --color-red-light: #eb455f;
   --color-dark-low: #50577a;
   --color-dark-light: #6b728e;
   --color-white: #fff;
@@ -65,13 +65,20 @@ html {
 .nav-bar {
 }
 .nav-list {
+  color: var(--color-dark);
   display: flex;
   gap: 3.2rem;
   list-style: none;
   font-size: 1.6rem;
 }
-.nav-link {
+.nav-link:is(:link, :visited) {
   padding: 0 1.6rem;
   text-transform: uppercase;
   font-weight: 700;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease-in;
+}
+.nav-link:is(:hover, :active) {
+  color: var(--color-red-light);
 }
