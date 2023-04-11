@@ -25,7 +25,7 @@
 
   --color-dark: #333;
   --color-red-light: #eb455f;
-  --color-dark-low: #50577a;
+  --color-heading-primary: #111;
   --color-dark-light: #6b728e;
   --color-white: #fff;
 }
@@ -61,6 +61,11 @@ html {
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+.logo-con:hover {
+  color: var(--color-red-light);
 }
 .nav-bar {
 }
@@ -82,3 +87,4 @@ html {
 .nav-link:is(:hover, :active) {
   color: var(--color-red-light);
 }
+/* Header */
