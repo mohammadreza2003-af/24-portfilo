@@ -25,6 +25,7 @@
 
   --color-dark: #333;
   --color-red-light: #eb455f;
+  --color-red-dark: #cf1833;
   --color-red-light-l: #eb455ea8;
   --color-heading-primary: #111;
   --color-dark-light: #6b728e;
@@ -110,6 +111,7 @@ header {
   width: 90rem;
 }
 .heading-primary {
+  transition: all 0.3s ease-in;
   font-size: 6rem;
   text-transform: uppercase;
   font-weight: 700;
@@ -123,11 +125,17 @@ header {
   text-align: center;
 }
 .dis {
-  font-size: 2.2rem;
+  font-size: 3.2rem;
   line-height: 1.5;
   width: 100%;
+  font-weight: 600;
   color: var(--color-dark);
+  cursor: pointer;
 }
+.heading-primary:hover {
+  color: var(--color-red-light);
+}
+
 .btn-box {
   margin-top: 5rem;
   text-align: center;
@@ -158,7 +166,7 @@ header {
 .head-socials {
   position: absolute;
   top: 50%;
-  left: -22%;
+  left: 2%;
   transform: translate(-50%, -50%);
   background: #fff;
   box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
@@ -176,4 +184,37 @@ header {
 }
 .social-link:hover {
   background: var(--color-red-light-l);
+}
+.mouse-box {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.mouse {
+  width: 2.4rem;
+  height: 4rem;
+  border-radius: 6rem;
+  border: 2px solid var(--color-heading-primary);
+  overflow: hidden;
+}
+.mouse::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  top: 7px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  border-radius: 50%;
+  opacity: 1;
+  animation: wheel 1.3s infinite;
+  -webkit-animation: wheel 1.3s infinite;
+}
+@keyframes wheel {
+  100% {
+    opacity: 0;
+    top: 27px;
+  }
 }
