@@ -314,3 +314,9 @@ header {
 .icon-s {
   width: 100%;
 }
+/* Section-Projects */
+.section-projects {
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 9rem;
+}
