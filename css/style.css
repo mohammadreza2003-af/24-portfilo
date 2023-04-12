@@ -264,3 +264,11 @@ header {
     opacity: 1;
   }
 }
+/* Section-my-skill */
+
+.section-my-skill {
+  margin: 0 auto;
+  max-width: 130rem;
+  background-color: rebeccapurple;
+  padding: 9rem;
+}
