@@ -275,6 +275,7 @@ header {
 }
 .boxs {
   display: grid;
+  gap: 11rem;
   grid-template-columns: 1fr 1fr;
 }
 .heading-tertiary {
@@ -301,8 +302,14 @@ header {
   font-size: 1.8rem;
   border-bottom: 2px solid var(--color-red-light);
 }
+.skill-box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
 .icon-box {
-  width: 6.4rem;
+  width: 10rem;
+  height: 10rem;
 }
 .icon-s {
   width: 100%;
