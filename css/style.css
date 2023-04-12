@@ -218,3 +218,49 @@ header {
     top: 27px;
   }
 }
+/*  Section-AboutMe */
+
+.section-about {
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 9rem;
+}
+.heading-secondary-box {
+  text-align: center;
+}
+.heading-secondary {
+  font-size: 4rem;
+  display: block;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 4rem;
+  color: var(--color-heading-primary);
+  position: relative;
+}
+.heading-secondary::after {
+  content: "";
+  width: 3.2rem;
+  height: 0.8rem;
+  bottom: -50%;
+  left: 50%;
+  opacity: 1;
+  border-radius: 12px;
+  transform: translate(-50%, -50%);
+  background-color: var(--color-red-light);
+  position: absolute;
+  animation: reg 3s infinite;
+}
+.dis-secondary {
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: var(--color-dark);
+}
+@keyframes reg {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
