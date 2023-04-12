@@ -57,6 +57,9 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 2rem 5rem;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
   box-shadow: 0 6.4rem 9.6rem rgba(0, 0, 0, 0.1);
 }
 .nav-logo {
@@ -260,6 +263,9 @@ header {
 }
 @keyframes reg {
   0% {
+    opacity: 1;
+  }
+  50% {
     opacity: 0;
   }
   100% {
