@@ -168,8 +168,8 @@ header {
 .head-socials {
   position: absolute;
   top: 50%;
-  left: 2%;
-  transform: translate(-50%, -50%);
+  left: 0%;
+  transform: translateY(-50%);
   background: #fff;
   box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
   padding: 0.5rem;
@@ -294,4 +294,16 @@ header {
 }
 .btn-s {
   padding: 1.5rem 5rem;
+}
+.btn-link:is(:link, :visited) {
+  color: var(--color-red-light);
+  text-decoration: none;
+  font-size: 1.8rem;
+  border-bottom: 2px solid var(--color-red-light);
+}
+.icon-box {
+  width: 6.4rem;
+}
+.icon-s {
+  width: 100%;
 }
