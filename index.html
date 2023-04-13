@@ -27,7 +27,7 @@
             <li><a class="nav-link" href="#m-h">Home</a></li>
             <li><a class="nav-link" href="#m-s">About</a></li>
             <li><a class="nav-link" href="#m-p">Project</a></li>
-            <li><a class="nav-link" href="#">Contact</a></li>
+            <li><a class="nav-link" href="#m-c">Contact</a></li>
           </ul>
         </div>
       </nav>
@@ -240,7 +240,7 @@
           </div>
         </div>
       </section>
-      <section class="section-contact">
+      <section id="m-c" class="section-contact">
         <h2 class="heading-secondary-box-c">
           <span class="heading-secondary">Contact</span>
           <span class="dis-secondary"
@@ -248,7 +248,44 @@
             back to you as soon as possible
           </span>
         </h2>
+
+        <div class="contact-box">
+          <form class="form-box" action="#">
+            <div class="input-box">
+              <label class="label-c" for="name">Name</label>
+              <input
+                class="input-c"
+                type="text"
+                placeholder="Enter Your Name"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <label class="label-c" for="Email">Email</label>
+              <input
+                class="input-c"
+                type="email"
+                placeholder="Enter Your Email"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <label class="label-c" for="Message">Message</label>
+              <textarea
+                class="input-c"
+                required
+                placeholder="Enter Your Message"
+                name="Message"
+                id="#"
+                cols="30"
+                rows="10"
+              ></textarea>
+              <button class="btn btn-s" type="submit">Submit</button>
+            </div>
+          </form>
+        </div>
       </section>
     </main>
+    <footer></footer>
   </body>
 </html>
