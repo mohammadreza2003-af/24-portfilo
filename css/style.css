@@ -271,6 +271,7 @@ header {
   width: 3.2rem;
   height: 0.8rem;
   bottom: -50%;
+  margin-top: 2rem;
   left: 50%;
   opacity: 1;
   border-radius: 12px;
@@ -749,6 +750,9 @@ footer {
   }
 }
 @media (max-width: 50rem) {
+  .heading-secondary::after {
+    bottom: -92%;
+  }
   .heading-secondary {
     font-size: 2.4rem;
   }
@@ -759,11 +763,9 @@ footer {
     color: var(--color-dark);
   }
   html {
-    font-size: 50%;
+    font-size: 55%;
   }
-  .heading-primary {
-    font-size: 4rem;
-  }
+
   .dis-box {
     margin: 3rem auto 0 auto;
     max-width: 90%;
@@ -789,11 +791,11 @@ footer {
   }
 
   .heading-primary {
-    font-size: 2.2rem;
+    font-size: 3rem;
   }
 
   .dis {
-    font-size: 1.6rem;
+    font-size: 2rem;
   }
   .skill-box {
     gap: 5rem;
