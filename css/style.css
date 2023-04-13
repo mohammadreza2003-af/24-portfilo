@@ -326,6 +326,7 @@ header {
 .section-my-project {
   max-width: 120rem;
   margin: 0 auto;
+  padding: 12rem 0;
 }
 .section-projects {
   margin: 0 auto 9rem auto;
@@ -417,4 +418,61 @@ a span {
 .btn-p-r:is(:hover, :active) {
   transform: translateY(-2px);
   box-shadow: 0 0px 12px rgba(0, 0, 0, 0.3);
+}
+/*  Section-AboutMe */
+
+.section-contact {
+  margin: 0 auto;
+  padding: 12rem 0rem;
+  background-size: cover;
+  background-position: center;
+  background: linear-gradient(
+    to right,
+    rgba(245, 245, 245, 0.8),
+    rgba(245, 245, 245, 0.8)
+  );
+}
+.heading-secondary-box-c {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+.heading-secondary {
+  font-size: 4rem;
+  display: block;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 4rem;
+  color: var(--color-heading-primary);
+  position: relative;
+}
+.heading-secondary::after {
+  content: "";
+  width: 3.2rem;
+  height: 0.8rem;
+  bottom: -50%;
+  left: 50%;
+  opacity: 1;
+  border-radius: 12px;
+  transform: translate(-50%, -50%);
+  background-color: var(--color-red-light);
+  position: absolute;
+  animation: reg 3s infinite;
+}
+.dis-secondary {
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: var(--color-dark);
+}
+@keyframes reg {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
