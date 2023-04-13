@@ -191,24 +191,24 @@ header {
 }
 
 /* social */
-.head-socials {
-  position: absolute;
-  top: 50%;
-  left: 0%;
-  transform: translateY(-50%);
-  background: #fff;
-  box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
-  padding: 0.5rem;
-}
-.social-box {
-  width: 5rem;
+.icon-h {
+  width: 3.2rem;
 }
 .social-link {
-  width: 100%;
-  display: block;
+  align-items: center;
+
+  display: inline-block;
+  justify-content: center;
   padding: 1rem;
   transition: background 0.3s;
   border-radius: 5px;
+}
+.head-s {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem 0;
 }
 .social-link:hover {
   background: var(--color-red-light-l);
