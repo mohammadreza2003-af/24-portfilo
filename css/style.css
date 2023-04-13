@@ -521,3 +521,43 @@ textarea {
   border: none;
   cursor: pointer;
 }
+/* Footer */
+footer {
+  background-color: #111;
+  color: var(--color-white);
+  padding: 8rem 0;
+}
+
+.footer-container {
+  max-width: 120rem;
+  margin: auto;
+}
+.footer-boxs {
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem 0;
+  position: relative;
+}
+.footer-box-1 {
+  max-width: 50rem;
+  width: 40%;
+}
+.f-social-box {
+  display: flex;
+  gap: 24px;
+}
+.footer-boxs::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: var(--color-white);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#color-fix {
+  color: #eee;
+  font-weight: 400;
+  font-size: 1.6rem;
+}
