@@ -602,6 +602,16 @@ footer {
   }
 }
 @media (max-width: 1100px) {
+  .head-content {
+    width: 85rem;
+  }
+
+  .section-my-skill {
+    padding: 7rem;
+  }
+  .section-projects {
+    max-width: 120rem;
+  }
   footer {
     background-color: #111;
     color: var(--color-white);
@@ -614,6 +624,12 @@ footer {
   }
 }
 @media (max-width: 780px) {
+  .section-my-skill {
+    padding: 4rem;
+  }
+  .section-projects {
+    max-width: 50rem;
+  }
   footer {
     background-color: #111;
     color: var(--color-white);
@@ -646,7 +662,135 @@ footer {
   }
   .f-social-box {
     display: flex;
+    gap: 24px;
+  }
+  .btn-p:is(:link, :visited) {
+    text-decoration: none;
+    color: var(--color-white);
+    border-radius: 50%;
+    cursor: pointer;
+    width: 9rem;
+    height: 4.2rem;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--color-white);
+    /* border: 2px solid var(--color-dark); */
+    box-shadow: 0 0px 12px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .icon-p {
+    width: 2.2rem;
+  }
+  .box-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .content-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 70rem) {
+  .head-content {
+    width: 85rem;
+  }
+  .heading-primary {
+    font-size: 3.2rem;
+  }
+  .dis-box {
+    margin: 3rem auto 0 auto;
+    max-width: 90%;
+    text-align: center;
+  }
+  .dis {
+    font-size: 2.2rem;
+    line-height: 1.5;
+    width: 100%;
+    font-weight: 600;
+    color: var(--color-dark);
+    cursor: pointer;
+  }
+  .boxs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .skill-box {
+    gap: 10rem;
+  }
+  .section-projects {
+    max-width: 35rem;
+  }
+  .contact-box {
+    width: 80%;
+  }
+  .text-a {
+    text-align: center;
+  }
+}
+@media (max-width: 50rem) {
+  .heading-primary {
+    font-size: 4rem;
+  }
+  .dis-box {
+    margin: 3rem auto 0 auto;
+    max-width: 90%;
+    text-align: center;
+  }
+  .dis {
+    font-size: 2.4rem;
+    line-height: 1.5;
+    width: 100%;
+    font-weight: 600;
+    color: var(--color-dark);
+    cursor: pointer;
+  }
+  .section-projects {
+    max-width: 60rem;
+  }
+  .contact-box {
+    width: 80%;
+  }
+
+  .social-box {
+    width: 4rem;
+  }
+}
+@media (max-width: 50rem) {
+  .heading-primary {
+    font-size: 2.2rem;
+  }
+
+  .dis {
+    font-size: 1.6rem;
+  }
+  .skill-box {
+    gap: 5rem;
+  }
+}
+@media (max-width: 32rem) {
+  .section-projects {
+    max-width: 40rem;
+  }
+  .f-social-box {
+    display: flex;
     gap: 12px;
+  }
+  .contact-box {
+    width: 80%;
+  }
+  .skill-box {
+    gap: 3rem;
   }
 }
 @media (max-width: 55rem) {
