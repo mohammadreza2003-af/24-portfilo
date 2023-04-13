@@ -45,12 +45,9 @@ header {
   position: relative;
   height: 100vh;
   min-height: 80rem;
-  background-position: center;
-  background: linear-gradient(
-    to right,
-    rgba(245, 245, 245, 0.8),
-    rgba(245, 245, 245, 0.8)
-  );
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-image: url(/images/bg-header-desktop.png);
 }
 
 .navigation-bar {
@@ -525,7 +522,7 @@ textarea {
 footer {
   background-color: #111;
   color: var(--color-white);
-  padding: 8rem 0;
+  padding: 12rem auto 0 auto;
 }
 
 .footer-container {
@@ -560,4 +557,18 @@ footer {
   color: #eee;
   font-weight: 400;
   font-size: 1.6rem;
+}
+.footer-copy {
+  padding: 4rem 0;
+  border-top: 1px solid #444;
+  color: #eee;
+  font-size: 1.2rem;
+  text-align: left;
+  text-align: center;
+}
+.btn-link-f:is(:link, :visited) {
+  color: var(--color-red-light);
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-bottom: 1px solid var(--color-red-light);
 }
