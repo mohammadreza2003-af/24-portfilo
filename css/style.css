@@ -749,6 +749,18 @@ footer {
   }
 }
 @media (max-width: 50rem) {
+  .heading-secondary {
+    font-size: 2.4rem;
+  }
+  a span {
+    margin-left: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--color-dark);
+  }
+  html {
+    font-size: 50%;
+  }
   .heading-primary {
     font-size: 4rem;
   }
@@ -775,8 +787,7 @@ footer {
   .social-box {
     width: 4rem;
   }
-}
-@media (max-width: 50rem) {
+
   .heading-primary {
     font-size: 2.2rem;
   }
@@ -789,6 +800,9 @@ footer {
   }
 }
 @media (max-width: 32rem) {
+  html {
+    font-size: 50%;
+  }
   .section-projects {
     max-width: 40rem;
   }
@@ -940,7 +954,7 @@ footer {
   .nav-bar {
     display: none;
   }
-  .navigation-bar {
+  .nav-f {
     justify-content: center;
   }
 }
