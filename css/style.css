@@ -170,7 +170,7 @@ header {
   color: var(--color-dark-high);
 }
 .logo-con:hover {
-  color: var(--color-red-light);
+  color: var(--color-cyan);
 }
 
 .nav-list {
@@ -181,6 +181,9 @@ header {
   list-style: none;
   font-size: 1.6rem;
 }
+.nav-link {
+  position: relative;
+}
 .nav-link:is(:link, :visited) {
   padding: 0 1.6rem;
   text-transform: uppercase;
@@ -188,6 +191,22 @@ header {
   text-decoration: none;
   color: inherit;
   transition: all 0.3s ease-in;
+}
+.nav-line {
+  position: relative;
+}
+.nav-line a::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  bottom: -30%;
+  left: 0;
+  width: 0%;
+  background: var(--color-cyan);
+  transition: 0.3s all ease-in-out;
+}
+.nav-line:hover a::after {
+  width: 100%;
 }
 .nav-link-light {
   color: var(--color-dark-high);
@@ -400,6 +419,7 @@ main {
   text-transform: uppercase;
   margin-bottom: 4rem;
   position: relative;
+  color: var(--color-cyan);
 }
 .heading-secondary-light {
   color: var(--color-heading-primary);
@@ -525,7 +545,7 @@ main {
   color: #888;
 }
 .img-p {
-  width: 100%;
+  width: 90%;
   display: block;
   object-fit: cover;
 }
@@ -536,6 +556,10 @@ main {
 }
 .box-img {
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .icon-p {
   width: 2.8rem;
