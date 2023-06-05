@@ -25,6 +25,7 @@ const btnLight = document.querySelector(".btn");
 const mainLight = document.querySelector("main");
 const mouseLight = document.querySelector(".mouse");
 const btnSw = document.getElementById("btn-sw");
+const currentTime = document.querySelector(".current-time");
 
 selectBtnSw.addEventListener("click", function () {
   headerLight.classList.toggle("header-light");
@@ -52,4 +53,13 @@ selectBtnSw.addEventListener("click", function () {
   mainLight.classList.toggle("main-light");
   mouseLight.classList.toggle("mouse-light");
   btnSw.classList.toggle("btn-sw-light");
+  currentTime.classList.toggle("current-time-light");
 });
+
+function updateTime() {
+  const now = new Date();
+  const currentTime = now.toLocaleTimeString();
+  document.querySelector(".current-time").textContent = currentTime;
+}
+
+setInterval(updateTime, 1000);

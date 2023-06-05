@@ -106,6 +106,22 @@ header {
   background: var(--color-white-low);
   transition: all 0.5s ease;
 }
+.current-time {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-white-low);
+  border: 0.3rem solid var(--color-white-low);
+  border-radius: 3.2rem;
+  padding: 2rem;
+  transition: all 0.3s ease-in-out;
+}
+/* .current-time:is(:hover, :active) {
+  background: var(--color-cyan);
+} */
+.current-time-light {
+  color: var(--color-dark-high);
+  border: 0.3rem solid var(--color-dark-high);
+}
 .btn-sw-c.active {
   position: absolute;
   background: var(--color-dark-high);
@@ -142,7 +158,9 @@ header {
   box-shadow: 0 6.4rem 9.6rem rgba(0, 0, 0, 0.2);
 }
 .nav-f-light {
-  background-color: #ffffff88;
+  background-color: var(--color-white-low);
+
+  box-shadow: 0 12px 32px #0000003a;
 }
 .nav-logo {
   display: flex;
@@ -1005,6 +1023,9 @@ footer {
   .nav-list {
     gap: 2rem;
     font-size: 1.8rem;
+  }
+  .btn-s {
+    padding: 2rem;
   }
 }
 @media (max-width: 32rem) {
