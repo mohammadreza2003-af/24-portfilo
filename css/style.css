@@ -202,6 +202,11 @@ header {
   background: var(--color-cyan);
   transition: 0.3s all ease-in-out;
 }
+.get-me-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .nav-line:hover a::after {
   width: 100%;
 }
