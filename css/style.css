@@ -827,6 +827,8 @@ footer {
     height: fit-content;
     gap: 3rem;
     padding: 2rem 3rem;
+    justify-content: center;
+    align-items: center;
   }
   .nav-logo {
     justify-content: space-between;
