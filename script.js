@@ -56,10 +56,77 @@ selectBtnSw.addEventListener("click", function () {
   currentTime.classList.toggle("current-time-light");
 });
 
+//////////////////////////////
+//Time counter
+
 function updateTime() {
   const now = new Date();
   const currentTime = now.toLocaleTimeString();
+  console.log(currentTime);
   document.querySelector(".current-time").textContent = currentTime;
 }
 
 setInterval(updateTime, 1000);
+
+//////////////////////////////
+//Scroll animation smooth
+
+const s1 = document.querySelector("#m-s");
+document.querySelector(".nav-list").addEventListener("click", function (e) {
+  e.preventDefault();
+  const click = e.target;
+  if (click.classList.contains("nav-link")) {
+    const id = click.getAttribute("href");
+    document.querySelector(id).scrollIntoView({ behavior: "smooth" });
+  }
+});
+const btnHead = document.querySelector(".btn-head");
+
+btnHead.addEventListener("click", function (e) {
+  e.preventDefault();
+  document.querySelector("#m-p").scrollIntoView({ behavior: "smooth" });
+});
+
+//////////////////////////////
+//handler animation smooth
+
+const handleHover = function (e) {
+  const link = e.target;
+  if (link.classList.contains("nav-link")) {
+    const siblings = link.closest(".nav-f").querySelectorAll(".nav-link");
+    const logo = link.closest(".nav-f").querySelector(".nav-logo");
+    siblings.forEach((el) => {
+      if (el != link) {
+        el.style.opacity = this;
+      }
+    });
+    logo.style.opacity = this;
+  }
+};
+document
+  .querySelector(".nav-f")
+  .addEventListener("mouseover", handleHover.bind(0.5));
+
+document
+  .querySelector(".nav-f")
+  .addEventListener("mouseout", handleHover.bind(1));
+
+//////////////////////////////
+//Sticky navigation
+
+const header = document.querySelector("header");
+const navigation = document.querySelector(".nav-w");
+const heightNav = navigation.getBoundingClientRect().height;
+
+const ObsCall = function (entries) {
+  const [entry] = entries;
+  !entry.isIntersecting
+    ? navigation.classList.add("ac-nav-w")
+    : navigation.classList.remove("ac-nav-w");
+};
+const headerObs = new IntersectionObserver(ObsCall, {
+  root: null,
+  threshold: 0.3,
+  rootMargin: `${heightNav}px`,
+});
+headerObs.observe(header);
